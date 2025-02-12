@@ -1,12 +1,25 @@
+'use client'
 import Inicio from "./components/Inicio";
-import Navbar from "./components/Navbar";
+import { useState } from "react";
+
 
 
 export default function Home() {
+  const [activeComponent, setActiveComponent] = useState('inicio');
+
+  const renderComponent = () => {
+    switch (activeComponent) {
+      case 'about':
+        return <AboutMe />;
+      case 'inicio':
+      default:
+        return <Inicio />;
+    }
+  };
+
   return (
     <>
-      <Navbar />  
-      <Inicio/> 
+      {renderComponent()}
     </>
   );
 }

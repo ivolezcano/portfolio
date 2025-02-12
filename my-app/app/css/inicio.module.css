@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.bungeeshaderegular {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+}
+  
+@media screen and (max-width: 640px) {
+    .inicio{
+        display: flex;
+        flex-direction: column;
+    }
+    .bungeeshaderegular{
+        font-size: 150%;
+    }
+}

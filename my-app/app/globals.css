@@ -13,6 +13,16 @@
     --foreground: #ededed;
   }
 }
+/* Oculta el scroll pero permite el desplazamiento */
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   color: var(--foreground);

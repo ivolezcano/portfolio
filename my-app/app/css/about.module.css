@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+.goblinoneregular {
+    font-family: "Goblin One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to bottom, white, #FF6347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.goblinoneregular2 {
+    font-family: "Goblin One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+

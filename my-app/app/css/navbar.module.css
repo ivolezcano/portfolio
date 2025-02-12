@@ -1,0 +1,32 @@
+
+
+/* Ensure navbar is at the top for mobile */
+@media (max-width: 640px) {
+    .navbar {
+        position: fixed; /* Keep it fixed at the top */
+        top: 0; /* Align to the top */
+        left: 0;
+        width: 100%; /* Full width */
+    }
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 640px) {
+    .social-icons,
+    .copyright {
+        display: none; 
+    }
+    
+    .toggle-button {
+        display: block; 
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 641px) {
+    .toggle-button {
+        display: none; 
+    }
+} 

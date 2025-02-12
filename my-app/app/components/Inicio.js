@@ -1,9 +1,11 @@
 'use client'
 import React, { useState, useEffect } from 'react';
+import styles from '@/app/css/inicio.module.css'
 import { GiBrain } from "react-icons/gi";
+import Navbar from './Navbar';
 
 export default function Inicio () {
-    const words = ['FULLSTACKDEV', 'FRONTEND', 'BACKEND']
+    const words = ['FULLSTACK', 'FRONTEND', 'BACKEND']
 
   // Estado para controlar la palabra que se muestra
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -23,12 +25,15 @@ export default function Inicio () {
   }, []);
 
     return (
+      <>
+        <Navbar/>
         <div style={{ paddingLeft: '10rem' }}>
-            <div className="flex justify-center items-center h-screen gap-2">
+            <div className={`flex justify-center items-center h-screen gap-2 ${styles.inicio} ${styles.bungeeshaderegular}`}>
                 <h1 className="text-white">IVANLEZCANO</h1>
                 <GiBrain className="icon-gradient" size={40}/>
                 <h2 className='text-white'>{currentWord}</h2>
             </div>
         </div>
+      </>
     )
 }

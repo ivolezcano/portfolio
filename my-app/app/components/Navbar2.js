@@ -18,7 +18,7 @@ export default function Navbar2() {
       }, []);
 
     return (
-        <nav className="fixed top-0 left-0 w-full md:w-40 h-auto md:h-screen bg-gradient-to-b from-[rgba(255, 255, 255, 0.5)] to-[rgba(235, 26, 26, 0.7)] flex flex-row-reverse md:flex-col items-center justify-between px-4 py-3 md:py-6 shadow-lg" data-aos="fade-up">
+        <nav className="fixed top-0 left-0 w-full md:w-40 z-40 h-auto md:h-screen flex flex-row-reverse md:flex-col items-center justify-between px-4 py-3 md:py-6 shadow-lg backdrop-blur-md md:bg-transparent md:bg-opacity-10 md:backdrop-blur-none" data-aos="fade-up">
             {/* Toggle Button */}
             <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
                 {isOpen ? <FaTimes className='text-white'/> : <FaBars className='text-white'/>}
@@ -33,7 +33,7 @@ export default function Navbar2() {
           </div>
 
           {/* Menú en horizontal cuando isOpen */}
-          <ul className={`flex ${isOpen ? 'flex-row justify-center gap-4' : 'hidden'} md:flex md:flex-col md:gap-10 text-white text-sm md:text-lg font-semibold tracking-wide`}>
+          <ul className={`flex flex-row md:flex md:flex-col md:gap-10 text-white text-sm md:text-lg font-semibold tracking-wide ${isOpen ? 'block' : 'hidden'}`}>
               <li className="rotate-[-23deg] hover:text-[#FF6347] hover:scale-110 transition-all animate-pulse duration-200 ease-in-out">
                   <a href="about">About Me</a>
               </li>

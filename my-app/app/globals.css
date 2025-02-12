@@ -35,3 +35,40 @@ body {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   color: linear-gradient(to right, #ff7e5f, #feb47b);
 }
+
+/* PROJECTS estilos */
+
+/* Tarjeta de crédito */
+.relative {
+  position: relative;
+}
+
+.transition-all {
+  transition: all 0.7s ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #0070f3;
+}

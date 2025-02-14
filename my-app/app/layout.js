@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Video } from "./components/Video";
 import Head from "next/head";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,29 +39,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <Head>
-         {/* Google Analytics */}
-         <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-T5QPMZP285"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-T5QPMZP285');
-            `,
-          }}
-        ></script>
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Video>{children}</Video> {/* Envuelve children dentro del video */}
       </body>
+      <GoogleAnalytics gaId="G-T5QPMZP285" />
     </html>
   );
 }

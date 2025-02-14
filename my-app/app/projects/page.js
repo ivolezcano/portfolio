@@ -56,7 +56,7 @@ const Projects = () => {
   return (
     <>
       <Navbar2 />
-      <div className="relative flex flex-col justify-center items-center min-h-screen p-10">
+      <div className="relative flex flex-col justify-center items-center min-h-screen pl-0 md:pl-10 pt-28">
         <h2 className={`text-3xl md:text-5xl font-extrabold ${styles.goblinoneregular} tracking-wider drop-shadow-[0_4px_10px_rgba(255,99,71,0.8)] mb-12`}>PROJECTS</h2>
 
         <div className="flex flex-col-reverse md:flex-row justify-center items-center">
@@ -87,7 +87,7 @@ const Projects = () => {
           </div>
 
           {/* Menú de navegación */}
-          <div className="mr-10 mb-8 md:mb-0 p-6 rounded-2xl shadow-2xl">
+          <div className="mb-8 md:mb-0 p-0 md:p-6 rounded-2xl shadow-2xl">
             <ul className="mt-4 grid grid-cols-2 md:grid-cols-1 gap-3 mt-4 space-y-3">
               {projects.map((project, index) => (
                 <li

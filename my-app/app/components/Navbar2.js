@@ -30,7 +30,7 @@ export default function Navbar2() {
       
           {/* Logo */}
           <div className="w-16 md:w-40">
-            <Link href="/"><img src="/logo.png" alt="Logo" className="w-full" /></Link>
+            <Link href="/"><img src="/logo.png" alt="Portfolio de Iván Lezcano, desarrollador Full Stack especializado en React y Django." className="w-full" /></Link>
           </div>
 
           {/* Menú en horizontal cuando isOpen */}

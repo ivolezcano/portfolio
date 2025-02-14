@@ -16,7 +16,7 @@ export default function Navbar() {
         <nav className="fixed left-0 top-0 h-screen w-40 bg-gradient-to-b from-[rgba(255, 255, 255, 0.5)] to-[rgba(235, 26, 26, 0.7)] flex flex-col items-center justify-between py-6 shadow-lg" data-aos="fade-up">
         {/* Logo */}
         <div className="w-21">
-          <Link href="/"><img src="/logo.png" alt="Logo" className="w-full" /></Link>
+          <Link href="/"><img src="/logo.png" alt="Portfolio de Iván Lezcano, desarrollador Full Stack especializado en React y Django." className="w-full" /></Link>
         </div>
   
         {/* Menú */}

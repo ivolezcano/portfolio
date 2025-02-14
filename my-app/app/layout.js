@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Video } from "./components/Video";
-import Head from "next/head";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 const geistSans = Geist({

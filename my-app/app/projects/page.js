@@ -7,15 +7,43 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isFlipped, setIsFlipped] = useState(false);
   
-    const projects = [
-      { name: 'Mal de alturas records', description: 'Mal de Altura Records es un sello discográfico y productora musical independiente especializada específicamente en música urbana. Con sede en Las Palmas de Gran Canaria (Barcelona), ofrece servicios de producción, grabación, mezcla y mastering, además de contribuir en la distribución dentro de plataformas digitales. Su misión es poder impulsar el talento, en principio local, y representar la identidad isleña en la industria musical. También brindan asesoramiento en infraestructuras musicales.', links:'https://mal-de-altura-records.vercel.app/'},
-      { name: 'Travel Camp', description: 'El proyecto Travel es una plataforma diseñada para aventureros y excursionistas, ofreciendo mapas offline y soporte para actividades al aire libre como senderismo y escalada. Utiliza tecnología de realidad aumentada para guiar a los usuarios en rutas de montaña, asegurando que no se pierdan incluso sin conexión a internet. Los usuarios pueden programar aventuras con amigos, descubrir nuevas ubicaciones cada mes y formar parte de una comunidad global. Está disponible para iOS y Android.', links:'https://landingtravel.vercel.app/'},
-      {name: 'Tifon Solutions', description: 'Tifon Solutions ofrece soluciones tecnológicas personalizadas para empresas, enfocándose en el desarrollo web, optimización de rendimiento, consultoría para la modernización de procesos y digitalización empresarial. Proporcionan también asesoramiento sobre la compra y configuración de dominios y hosting, así como estrategias de gamificación para aumentar la participación de los usuarios. Su misión es ayudar a las empresas a adaptarse a la transformación digital y a maximizar su competitividad.', links: 'https://tifonsolutions.com/'},
-      { name: 'TECNOSTORE', description: 'Es una tienda virtual enfocada en la venta de dispositivos electrónicos. El sitio cuenta con un diseño intuitivo y una interfaz responsive que se adapta a diferentes tamaños de pantalla. Cada artículo tiene un enlace individual que permite a los clientes acceder a más detalles. El proyecto está desarrollado con tecnologías web modernas y optimizado para una navegación rápida. Podría expandirse con funcionalidades como filtros de búsqueda, carrito de compras y métodos de pago online para mejorar la experiencia de compra. 🚀', links:'https://tecno-store.netlify.app/'}, 
-      { name: 'ITBANK', description: 'Este proyecto, ITBANK-FullStack, es una aplicación web desarrollada con tecnologías Full Stack que simula la gestión de un banco digital. Incluye funcionalidades como creación de usuarios, autenticación, gestión de cuentas y transacciones. Es un proyecto ideal para explorar el desarrollo de aplicaciones financieras, arquitectura Full Stack y seguridad en autenticación y manejo de datos sensibles. También incluya una base de datos para almacenar la información de los usuarios y sus operaciones bancarias.', links:'https://github.com/lautarobruses/ITBANK-FullStack'},
-      {name: 'RoustesInfo', description: 'RoutesInfo es un proyecto desarrollado en Python que permite gestionar y visualizar rutas. Utilizando una interfaz gráfica con Tkinter, esta herramienta permite cargar archivos CSV con datos de rutas y obtener información detallada sobre las mismas, como distancias y tiempos estimados. La aplicación facilita la búsqueda y organización de rutas, y su interfaz intuitiva permite a los usuarios interactuar sin necesidad de conocimientos técnicos avanzados. Es ideal para quienes necesitan manejar y consultar rutas de manera rápida y dinámica.', links: 'https://github.com/ivolezcano/RoutesInfo'}, 
-      { name: 'Ferreteria parque chas', description: 'es un sitio web dedicado a la venta de herramientas y productos para construcción y remodelación. Ofrece un catálogo de productos con precios y opciones de compra en línea, incluyendo promociones destacadas. Los usuarios pueden explorar diferentes categorías y realizar compras fácilmente desde el sitio. La página también proporciona información de contacto y ubicación para quienes prefieran la compra en tienda. Además, la página principal destaca productos con opción de agregar al carrito para una compra rápida y sencilla.', links:'https://ferreteriaparquechas.com/'},
-    ];
+  const projects = [
+    { 
+        name: 'Mal de alturas records', 
+        description: 'Mal de Altura Records is an independent record label and music production company specializing in urban music. Based in Las Palmas de Gran Canaria (Barcelona), it offers production, recording, mixing, and mastering services, in addition to contributing to digital platform distribution. Its mission is to promote local talent and represent the island identity in the music industry. They also provide advice on music infrastructure.', 
+        links:'https://mal-de-altura-records.vercel.app/'
+    },
+    { 
+        name: 'Travel Camp', 
+        description: 'The Travel project is a platform designed for adventurers and hikers, offering offline maps and support for outdoor activities like hiking and climbing. It uses augmented reality technology to guide users on mountain routes, ensuring they don’t get lost even without an internet connection. Users can schedule adventures with friends, discover new locations each month, and be part of a global community. Available for iOS and Android.', 
+        links:'https://landingtravel.vercel.app/'
+    },
+    { 
+        name: 'Tifon Solutions', 
+        description: 'Tifon Solutions offers customized technology solutions for businesses, focusing on web development, performance optimization, process modernization consultancy, and business digitalization. They also provide advice on domain and hosting purchases and configurations, as well as gamification strategies to increase user engagement. Their mission is to help companies adapt to digital transformation and maximize their competitiveness.', 
+        links: 'https://tifonsolutions.com/'
+    },
+    { 
+        name: 'TECNOSTORE', 
+        description: 'It’s an online store focused on selling electronic devices. The site features an intuitive design and a responsive interface that adapts to different screen sizes. Each item has a unique link that allows customers to access more details. The project is developed with modern web technologies and optimized for fast navigation. It could be expanded with features such as search filters, a shopping cart, and online payment methods to enhance the shopping experience. 🚀', 
+        links:'https://tecno-store.netlify.app/' 
+    },
+    { 
+        name: 'ITBANK', 
+        description: 'This project, ITBANK-FullStack, is a web application developed with Full Stack technologies that simulates the management of a digital bank. It includes features like user creation, authentication, account management, and transactions. It’s an ideal project for exploring the development of financial applications, Full Stack architecture, and security in authentication and handling sensitive data. It also includes a database to store user information and their banking operations.', 
+        links:'https://github.com/lautarobruses/ITBANK-FullStack'
+    },
+    { 
+        name: 'RoustesInfo', 
+        description: 'RoutesInfo is a Python project that allows users to manage and visualize routes. Using a graphical interface with Tkinter, this tool enables users to load CSV files with route data and obtain detailed information about them, such as distances and estimated times. The app makes it easy to search and organize routes, and its intuitive interface allows users to interact without advanced technical knowledge. It’s ideal for those who need to manage and query routes quickly and dynamically.', 
+        links: 'https://github.com/ivolezcano/RoutesInfo'
+    },
+    { 
+        name: 'Ferreteria parque chas', 
+        description: 'It is a website dedicated to the sale of tools and products for construction and remodeling. It offers a product catalog with prices and online purchase options, including highlighted promotions. Users can explore different categories and make purchases easily from the site. The page also provides contact information and location for those who prefer in-store shopping. Additionally, the homepage highlights products with the option to add them to the cart for quick and easy checkout.', 
+        links:'https://ferreteriaparquechas.com/'
+    },
+];
 
   const handleProjectClick = (index) => {
     setIsFlipped(false);

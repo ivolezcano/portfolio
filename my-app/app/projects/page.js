@@ -24,7 +24,7 @@ const Projects = () => {
         links: 'https://tifonsolutions.com/'
     },
     { 
-        name: 'TECNOSTORE', 
+        name: 'TECNO STORE', 
         description: 'It’s an online store focused on selling electronic devices. The site features an intuitive design and a responsive interface that adapts to different screen sizes. Each item has a unique link that allows customers to access more details. The project is developed with modern web technologies and optimized for fast navigation. It could be expanded with features such as search filters, a shopping cart, and online payment methods to enhance the shopping experience. 🚀', 
         links:'https://tecno-store.netlify.app/' 
     },

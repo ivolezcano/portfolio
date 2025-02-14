@@ -85,7 +85,7 @@ const Contact = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
-                                className="placeholder-white-500 placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
+                                className="placeholder-white placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
                                 placeholder="Name"
                             />
                         </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                                 value={formData.companie}
                                 onChange={handleChange}
                                 required
-                                className="placeholder-white-500 placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
+                                className="placeholder-white placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
                                 placeholder="Company"
                             />
                         </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="placeholder-white-500 placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
+                                className="placeholder-white placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
                                 placeholder="Email"
                             />
                         </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 required
                                 rows="4"
-                                className="placeholder-white-500 placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
+                                className="placeholder-white placeholder-opacity-70 w-full p-3 text-white-900 bg-transparent border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-all duration-300 cursor-pointer"
                                 placeholder="Message"
                             />
                         </div>

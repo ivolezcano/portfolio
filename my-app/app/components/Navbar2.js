@@ -4,6 +4,7 @@ import styles from '@/app/css/navbar.module.css'
 import { BiLogoGmail } from "react-icons/bi";
 import { useEffect } from "react";
 import AOS from "aos";
+import Link from 'next/link';
 import "aos/dist/aos.css";
 
 
@@ -29,40 +30,40 @@ export default function Navbar2() {
       
           {/* Logo */}
           <div className="w-16 md:w-40">
-            <a href="/"><img src="/logo.png" alt="Logo" className="w-full" /></a>
+            <Link href="/"><img src="/logo.png" alt="Logo" className="w-full" /></Link>
           </div>
 
           {/* Menú en horizontal cuando isOpen */}
           <ul className={`flex flex-row md:flex md:flex-col md:gap-10 text-white text-sm md:text-lg font-semibold tracking-wide ${isOpen ? 'block' : 'hidden'}`}>
               <li className="rotate-[-23deg] hover:text-[#FF6347] hover:scale-110 transition-all animate-pulse duration-200 ease-in-out">
-                  <a href="about">About Me</a>
+                  <Link href="about">About Me</Link>
               </li>
               <li className="rotate-[-23deg] hover:text-[#FF6347] hover:scale-110 transition-all animate-pulse duration-200 ease-in-out">
-                  <a href="projects">Projects</a>
+                  <Link href="projects">Projects</Link>
               </li>
               <li className="rotate-[-23deg] hover:text-[#FF6347] hover:scale-110 transition-all animate-pulse duration-200 ease-in-out">
-                  <a href="certificates">Certificates</a>
+                  <Link href="certificates">Certificates</Link>
               </li>
               <li className="rotate-[-23deg] hover:text-[#FF6347] hover:scale-110 transition-all animate-pulse duration-200 ease-in-out">
-                  <a href="contact">Contact</a>
+                  <Link href="contact">Contact</Link>
               </li>
           </ul>
         </div>
         {/* Redes sociales */}
         <div className={`grid grid-cols-2 gap-4 sm:gap-2 hidden md:grid`}>
 
-          <a href="https://www.linkedin.com/in/ivanlezcano/" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/ivanlezcano/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={40} className='text-white'/>
-          </a>
-          <a href="https://github.com/ivolezcano" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="https://github.com/ivolezcano" target="_blank" rel="noopener noreferrer">
             <FaGithub size={40} className='text-white'/>
-          </a>
-          <a href="https://wa.me/+5491131508014" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="https://wa.me/+5491131508014" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp size={40} className='text-white'/>
-          </a>
-          <a href="mailto:lezcamati@gmail.com?subject=%E2%9C%85%20Necesitamos%20un%20desarrollador%20para%20nuestro%20proyecto" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="mailto:lezcamati@gmail.com?subject=%E2%9C%85%20Necesitamos%20un%20desarrollador%20para%20nuestro%20proyecto" target="_blank" rel="noopener noreferrer">
             <BiLogoGmail size={40} className='text-white'/>
-          </a>
+          </Link>
         </div>
         <p className={`text-s text-white hidden md:block`}>2025 ©</p>
 

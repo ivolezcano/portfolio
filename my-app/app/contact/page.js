@@ -4,6 +4,7 @@ import { default as Navbar2 } from "../components/Navbar2";
 import emailjs from '@emailjs/browser';
 import styles from '@/app/css/about.module.css'
 import {FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
 
 const Contact = () => {
@@ -58,18 +59,18 @@ const Contact = () => {
                         <p className="text-lg md:text-xl">Feel free to reach me out</p>
                         <h3 className="text-2xl md:text-4xl font-bold mb-4">Let’s Work Together !</h3>
                         <div className="flex space-x-5 sm:gap-2">
-                                  <a href="https://www.linkedin.com/in/ivanlezcano/" target="_blank" rel="noopener noreferrer">
+                                  <Link href="https://www.linkedin.com/in/ivanlezcano/" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedin size={40} className='text-blue-600 bg-white'/>
-                                  </a>
-                                  <a href="https://github.com/ivolezcano" target="_blank" rel="noopener noreferrer">
+                                  </Link>
+                                  <Link href="https://github.com/ivolezcano" target="_blank" rel="noopener noreferrer">
                                     <FaGithub size={40} className='bg-black rounded-full text-white'/>
-                                  </a>
-                                  <a href="https://wa.me/+5491131508014" target="_blank" rel="noopener noreferrer">
+                                  </Link>
+                                  <Link href="https://wa.me/+5491131508014" target="_blank" rel="noopener noreferrer">
                                     <FaWhatsapp size={40} className='rounded-full bg-white text-green-700'/>
-                                  </a>
-                                  <a href="mailto:lezcamati@gmail.com?subject=%E2%9C%85%20Necesitamos%20un%20desarrollador%20para%20nuestro%20proyecto" target="_blank" rel="noopener noreferrer">
+                                  </Link>
+                                  <Link href="mailto:lezcamati@gmail.com?subject=%E2%9C%85%20Necesitamos%20un%20desarrollador%20para%20nuestro%20proyecto" target="_blank" rel="noopener noreferrer">
                                     <BiLogoGmail size={40} className='bg-white rounded text-red-500'/>
-                                  </a>
+                                  </Link>
                                 </div>
                     </div>
 

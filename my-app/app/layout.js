@@ -39,17 +39,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <Head>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-T5QPMZP285`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-T5QPMZP285', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </script>
+         {/* Google Analytics */}
+         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-T5QPMZP285"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-T5QPMZP285');
+            `,
+          }}
+        ></script>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

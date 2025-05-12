@@ -43,6 +43,11 @@ const Projects = () => {
         description: 'It is a website dedicated to the sale of tools and products for construction and remodeling. It offers a product catalog with prices and online purchase options, including highlighted promotions. Users can explore different categories and make purchases easily from the site. The page also provides contact information and location for those who prefer in-store shopping. Additionally, the homepage highlights products with the option to add them to the cart for quick and easy checkout.', 
         links:'https://ferreteriaparquechas.com/'
     },
+    {
+        name: 'Compratiendas Ecommerce',
+        description:'The website https://compratiendas.vercel.app/ is an online platform designed to facilitate product ordering, particularly through WhatsApp. It features a straightforward interface that allows users to browse products by brand and submit orders directly.',
+        links:'https://compratiendas.vercel.app/'
+    },
 ];
 
   const handleProjectClick = (index) => {
